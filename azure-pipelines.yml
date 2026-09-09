@@ -38,3 +38,17 @@ steps:
     inputs:
       summaryFileLocation: "$(System.DefaultWorkingDirectory)/coverage.xml"
       pathToSources: "$(System.DefaultWorkingDirectory)"
+
+  - script: |
+      mkdir -p $(Build.ArtifactStagingDirectory)/app
+      cp -r app $(Build.ArtifactStagingDirectory)/app/
+      cp requirements.txt $(Build.ArtifactStagingDirectory)/app/
+      cp README.md $(Build.ArtifactStagingDirectory)/app/
+    displayName: "Package application"
+
+  - task: PublishPipelineArtifact@1
+    displayName: "Publish application artifact"
+    inputs:
+      targetPath: "$(Build.ArtifactStagingDirectory)/app"
+      artifact: "python-app"
+      publishLocation: "pipeline"
