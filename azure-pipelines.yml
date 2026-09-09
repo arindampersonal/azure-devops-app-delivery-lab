@@ -17,5 +17,5 @@ steps:
     displayName: "Install dependencies"
 
   - script: |
-      pytest -v
+      python -m pytest -v
     displayName: "Run unit tests"
