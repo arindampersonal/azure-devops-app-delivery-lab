@@ -48,7 +48,7 @@ azure-devops-app-delivery-lab/
 │
 ├── requirements.txt
 └── README.md
-
+  
 ##  Project Structure
  
 mkdir app
