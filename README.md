@@ -49,8 +49,7 @@ azure-devops-app-delivery-lab/
 ├── requirements.txt
 └── README.md
 
-
-## Commands
+## Project Structure
 
 mkdir app
 mkdir tests
