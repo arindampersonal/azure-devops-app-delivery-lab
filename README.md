@@ -50,7 +50,7 @@ azure-devops-app-delivery-lab/
 └── README.md
 
 ##  Project Structure
-
+ 
 mkdir app
 mkdir tests
 New-Item app\\\_\_init\_\_.py -ItemType File
