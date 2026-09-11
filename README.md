@@ -57,7 +57,8 @@ New-Item app\\\_\_init\_\_.py -ItemType File
 New-Item app\\main.py -ItemType File
 New-Item tests\\test\_main.py -ItemType File
 New-Item requirements.txt -ItemType File
-New-Item README.md -ItemType File    
+New-Item README.md -ItemType File
+
 
 
 
